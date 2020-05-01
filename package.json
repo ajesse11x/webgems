@@ -8,12 +8,15 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
-    "nuxt-clipboard2": "^0.2.1"
+    "nuxt-clipboard2": "^0.2.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",
@@ -23,5 +26,6 @@
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.0"
-  }
+  },
+  "snyk": true
 }
